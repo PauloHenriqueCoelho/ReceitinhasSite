@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Criar</title>
+
+      <!--Nav bar, o site inteiro foi trabalhado usando bootstrap.-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  shadow p-3 mb-5 bg-body-tertiary rounded">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="imagens/LOGO-RECEITINHAS.png" style="width: 210px;" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27" width="29" height="29"><path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"></path></svg>
+                  Ínicio
+                </a>
+              </li>
+
+              <!--Menu estilo dropdown para pagina Receitas-->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path d="M3 2.75A2.75 2.75 0 0 1 5.75 0h14.5a.75.75 0 0 1 .75.75v20.5a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h5.25v-4H6A1.5 1.5 0 0 0 4.5 18v.75c0 .716.43 1.334 1.05 1.605a.75.75 0 0 1-.6 1.374A3.251 3.251 0 0 1 3 18.75ZM19.5 1.5H5.75c-.69 0-1.25.56-1.25 1.25v12.651A2.989 2.989 0 0 1 6 15h13.5Z"></path><path d="M7 18.25a.25.25 0 0 1 .25-.25h5a.25.25 0 0 1 .25.25v5.01a.25.25 0 0 1-.397.201l-2.206-1.604a.25.25 0 0 0-.294 0L7.397 23.46a.25.25 0 0 1-.397-.2v-5.01Z"></path></svg>
+                  Receitas
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="doces.html">Doces</a></li>
+                  <li><a class="dropdown-item" href="salgados.html">Salgados</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="receitas.html">Todas receitas</a></li>
+                </ul>
+              </li>
+
+              <!--Menu estilo dropdown para pagina Sobre-->
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="23" height="23"><path d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z"></path><path d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z"></path><path d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z"></path></svg>
+                  Sobre
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item btn-dark" href="objetivo.html">Objetivo</a></li>
+                  <li><a class="dropdown-item" href="quemsomos.html">Quem somos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="redessociais.html">Redes sociais</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+            <!--Caixa de pesquisa-->
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquise" aria-label="Search">
+              <button class="d-grid gap-2 col-6 mx-auto, btn btn-dark"  type="submit" >          
+                Pesquisar receitas
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</head>
+
+<body>
+
+  <!--Titulo da pagina inicial-->
+
+  <ul class="CriarReceitasBody">
+    <h1 class="tituloMenu"> Ensine-nos </h1>
+
+    <div class="d-flex">
+      <div class="p-2">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"><h5>Nome da receita</h5></label>
+          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Ex: Cocada" style="max-width: 350px;">
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label"><h5>Escolha uma foto</h5></label>
+          <input class="form-control" type="file" id="formFile" style="max-width: 350px;">
+        </div>
+        <h5>Tipo de receita:</h5>
+        <select class="form-select" style="max-width: 350px;" aria-label="Default select example">
+          <option value="salgadoR">Salgada</option>
+          <option value="doceR">Doce</option>
+        </select>
+        <br>
+        <h5>Dificuldade:</h5>
+        <select class="form-select" style="max-width: 350px;" aria-label="Default select example">
+          <option selected>Fácil</option>
+          <option value="salgadoR">Média</option>
+          <option value="doceR">Difícil</option>
+        </select>
+        <br>
+        <h5>Custo:</h5>
+        <select class="form-select" style="max-width: 350px;" aria-label="Default select example">
+          <option selected>Baixo</option>
+          <option value="salgadoR">Médio</option>
+          <option value="doceR">Alto</option>
+        </select>
+        <br>
+        <h5>Tempo de preparo em minutos:</h5>
+        <input class="form-control" type="number" id="formFile" style="max-width: 350px;">
+        <br>
+        <h5>Serve até quantas porções:</h5>
+        <input class="form-control" type="number" id="formFile" style="max-width: 350px;">
+       
+      </div>
+      <div class="p-2 w-80 flex-grow-1 ">
+        <div class="mb-3" >
+          <label for="exampleFormControlTextarea1" class="form-label"> <h5> Escreva os ingredientes necessários, usando quebra de linha. </h5>
+            <a class="linkEstilo1" href="">Veja como fazer.</a> 
+          </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+        </div>
+        <div class="mb-3" >
+          <label for="exampleFormControlTextarea1" class="form-label"> <h5> Escreva a quantidade de ingredientes usado, usando quebra de linha. </h5>
+            <a class="linkEstilo1" href="">Veja como fazer.</a> 
+          </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+        </div>
+        <div class="mb-3" >
+          <label for="exampleFormControlTextarea1" class="form-label"> <h5> Escreva o modo de preparo da receita, usando quebra de linha. </h5>
+            <a class="linkEstilo1" href="">Veja como fazer.</a> 
+          </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="13"></textarea>
+        </div>
+      </div>
+    </div>
+
+   
+   </ul>
+
+     <!--Roda-pé-->
+
+  <footer class="w-100 py-4 flex-shrink-0 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+    <div class="container py-4">
+        <div class="row gy-4 gx-5">
+
+           <!--Informações rápidas e úteis para o usuário-->
+
+            <div class="col-lg-4 col-md-6">
+                <h5 class="h1 text-dark">RE.</h5>
+                <p class="small text-muted">Site feito para fins educacionais. Feito por alunos da etec</p>
+                <p class="small text-muted mb-0">&copy; Copyrights. Todos direitos reservados. <a class="linkEstilo1" href="#">Receitinhas</a></p>
+            </div>
+
+              <!--Link para navegação rápida, sem a necessidade de o usuário voltar ao topo da página-->
+
+            <div class="col-lg-2 col-md-6">
+                <h5 class="text-dark mb-3">Navegação rápida</h5>
+                <ul class="list-unstyled text-muted">
+                    <li><a class="linkEstilo1" href="index.html">ínicio</a></li>
+                    <li><a class="linkEstilo1" href="receitas.html">Receitas</a></li>
+                    <li><a class="linkEstilo1" href="#">Sobre</a></li>
+                </ul>
+            </div>
+
+             <!--Seção para receber noticias pelo email (não funcional ainda)-->
+
+            <div class="col-lg-4 col-md-6">
+                <h5 class="text-dark mb-3">Notícias</h5>
+                <p class="small text-muted">Se cadastre e receba as melhores receitas da década.</p>
+                <form action="#">
+                    <div class="input-group mb-3">
+                        <input class="form-control" type="text" placeholder="Seu nome" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-dark" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i>Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+</body>
+</html>
+
